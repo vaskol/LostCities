@@ -1,38 +1,154 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+.app {
+  font-family: 'Finger Paint', cursive;
+  color: rgba(0, 0, 0, 0.712);
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.statistics-card {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background: transparent;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.statistics-card:hover,
+.statistics-card:focus {
+  transform: translateY(-10px) scale(1.03);
+  border: none;
+  background: transparent;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  outline: none;
+  cursor: default;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  font-family: 'Finger Paint', cursive;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: black;
+  border: 0px solid rgba(110, 198, 248, 0.356);
+  background-color: rgba(185, 222, 243, 0.356);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: inset 0 0 0 0rgb(236, 177, 14);
+}
+
+
+button:hover {
+  box-shadow: inset 400px 0 0 0 rgb(236, 177, 14);
+  color: #162944;
+  transform: translateY(-3px) scale(1.05);
+}
+
+button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+button:disabled {
+  border: 0px solid #aaa;
+  color: #aaa;
+  background: transparent;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0px rgba(69, 133, 230, 0.5);
+}
+
+.minusBtn,
+.plusBtn {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.rem;
+  line-height: 1;
+  transition: font-size 0.2s ease;
+}
+
+.minusBtn:hover,
+.plusBtn:hover,
+.minusBtn:focus,
+.plusBtn:focus {
+  font-size: 1.7rem;
+  box-shadow: none !important;
+  background: none !important;
+  color: black;
+}
+
+
+.playerSelectionBtn {
+  padding: 10px;
+}
+
+.miplayerSelectionBtn:hover,
+.minplayerSelectionBtn:focus {
+  padding: 10px;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* .card {
+  padding: 10px 14px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 40px;
+} */
+/* 
+
+
+.normal-multiplier {
+  background-color: lightyellow;
+}
+
+.black-multiplier {
+  background-color: black;
   color: white;
+} */
+
+.removed {
+  opacity: 0.3;
+  text-decoration: line-through;
 }
 
-.App-link {
-  color: #61dafb;
+.player-money {
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bank-money {
+  margin: 10px;
+}
+
+.player-money button {
+  margin: 0 5px;
+}
+
+.controls {
+  margin-top: 20px;
 }
