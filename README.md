@@ -1,6 +1,8 @@
-# LostCities_BoardGame_Cheatsheet
+# LostCities BoardGame Cheatsheet
 
-LostCities_BoardGame_Cheatsheet helps you track a 2-player game of Lost Cities in real time, so you can adjust your play and increase your chances to win.  
+LostCities BoardGame Cheatsheet helps you track a 2-player game of Lost Cities in real time, so you can adjust your play and increase your chances to win.  
+
+https://boardgamegeek.com/boardgame/50/lost-cities
 
 ## Getting Started
 
